@@ -1,0 +1,42 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0; }
+
+.wrapper {
+  height: 100%; }
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%; }
+
+.reviews {
+  min-height: 90%;
+  border: 1px solid red;
+  margin-top: -28px; }
+
+.reviews__title {
+  color: #c50c2f;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 53px;
+  text-align: center; }
+
+.reviews__content {
+  margin-top: 46px; }
+
+.reviews__item {
+  display: flex;
+  align-content: center; }
+
+.send__form {
+  display: flex;
+  flex-direction: column; }
