@@ -11,27 +11,29 @@
     <div class="wrapper">
         <div class="container">
                 <div class="reviews">
-                    <div class="reviews__title">Отзывы</div>
-                    <div class="reviews__container">
-                        <div class="reviews__item">
-                            <div class="item__logo">
-                                <img src="./img/anonym.png" alt="">
+                    <span class="reviews__title"> Отзывы</span>
+                    <ul class="reviews__list">
+                        <li class="reviews__item">
+                            <div class="reviews__item-logo">
+                                    <img src="./img/anonym.png" alt="">
                             </div>
-                            <div class="item__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti itaque perspiciatis ratione unde minus repellendus saepe quis quas explicabo blanditiis, neque magni esse nostrum atque molestias quasi nisi iste.
+                            <div class="reviews__item-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum ut eaque obcaecati velit odio animi deleniti? Veniam harum cupiditate ex tempora fugit, inventore ea commodi molestiae ab ipsum velit.</p>
+                                
                             </div>
-                        </div>
-
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="send">
                     <form action="add.php" class="send__form" id="send__form">
-                        <input type="text" name="name" required>
-                        <input type="text" name="bonustrek" required>
-                        <button type="submit">Отправить</button>        
+                        <input type="text" name="name"  class="send__form-input" placeholder="Имя" required>
+                        <input type="text" name="bonustrek" class="send__form-txt" placeholder="Сообщение" required>
+                        <button type="submit" class="send__submit">Отправить</button>        
                     </form>
                 </div>            
         </div>
     </div>
+
+    <script src="./assets/scripts/app.js"></script>
 </body>
 </html>

@@ -1,4 +1,46 @@
+.send{
+    // margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .send__form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.send__form-input{
+    width: 458px;
+    height: 55px;
+    outline: none;
+    border-radius: 15px;
+    padding-left: 15px;    
+}
+
+.send__form-txt{
+    margin-top: 20px;
+    width: 458px;
+    height: 129px;
+    border-radius: 15px;
+    padding: 0;
+    outline:none;
+    resize: none;
+}
+
+.send__submit{
+    width: 458px;
+    height: 55px;
+    color: #ffffff;    
+    font-size: 17px;
+    font-weight: 400;    
+    text-transform: uppercase;
+    background: $red;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    border-radius: 15px;
 }

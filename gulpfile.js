@@ -1,7 +1,10 @@
 'use strict';
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var livereload = require('gulp-livereload');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    livereload = require('gulp-livereload'),
+    gcmq = require('gulp-group-css-media-queries');
+
+    // gcmq()
 
 
 var paths = {
@@ -15,7 +18,8 @@ var paths = {
 };
 gulp.task('scss', function() {
     return gulp.src(paths.styles.src)
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(gcmq())
         .pipe(gulp.dest(paths.styles.build))
         .pipe(livereload());
 });
